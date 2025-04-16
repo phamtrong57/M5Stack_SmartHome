@@ -1,0 +1,29 @@
+{
+    "statusCode": 100,
+    "body": {
+        "deviceList": [
+            {
+                "deviceId": "CD266FE64813",
+                "deviceName": "Hub Plus 13",
+                "deviceType": "Hub Plus",
+                "enableCloudService": true,
+                "hubDeviceId": "000000000000"
+            }
+        ],
+        "infraredRemoteList": [
+            {
+                "deviceId": "02-202501281947-75389738",
+                "deviceName": "Air Conditioner",
+                "remoteType": "DIY Air Conditioner",
+                "hubDeviceId": "CD266FE64813"
+            },
+            {
+                "deviceId": "02-202501281952-61305966",
+                "deviceName": "Light",
+                "remoteType": "DIY Light",
+                "hubDeviceId": "CD266FE64813"
+            }
+        ]
+    },
+    "message": "success"
+}
