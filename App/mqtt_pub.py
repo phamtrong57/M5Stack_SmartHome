@@ -8,7 +8,7 @@ port = 8883  # Standard port for secure MQTT
 topic = "SWBOT/ORDERS"  # Replace with your topic
 
 # Paths to certificates
-root_ca_path = "AmazonRootCA1.pem"
+root_ca_path = "AmazonRootCA1.pem"　#private inf
 cert_path = "SWBOT.pem.crt"
 private_key_path = "SWBOT.private.pem.key"
 
@@ -19,7 +19,6 @@ client_id = "my_mqtt_publisher"  # Unique client ID for your connection
 def on_connect(client, userdata, flags, rc):
     print(f"Connected with result code {rc}")
 
-# Create MQTT client instance
 client = mqtt.Client()
 
 # Set up TLS for secure communication
@@ -35,7 +34,6 @@ client.on_connect = on_connect
 # Connect to AWS IoT
 client.connect(endpoint, port=8883)
 
-# Start the loop to keep the connection alive
 client.loop_start()
 
 # Continuous loop to publish messages every 5 seconds
@@ -45,9 +43,8 @@ try:
         client.publish(topic, message)
         print(f"TOPIC: {topic}")
         print(f"Message published: {message}")
-        time.sleep(5)  # Publish every 5 seconds (adjust as needed)
+        time.sleep(5)  # Publish every 5 seconds
 except KeyboardInterrupt:
     print("Disconnected by user")
 
-# Stop the loop when done (no subscription or listening needed)
 client.loop_stop()
