@@ -16,6 +16,9 @@ As you can see in Figure 1, the system is based on Core2 and TMOS IR sensor. The
 ![alt text](/Fig/IoT-Final-Project.png)
 <p align ="center" >Figure 1. Smart Home using M5Stack Core2</p>
 
+![alt text](/Fig/solution.png)
+<p align ="center" >Figure 2. Smart Home using M5Stack Core2 idea</p>
+
 ### 3.1. Motion detecting Module
 This module detect motions in the room using the TMOS IR sensor. You may not know, humans emit infrared radiation in the form of heat, and infrared (IR) sensors and thermal sensors, such as the TMOS or other infrared thermal sensors, can detect changes in temperature to identify motion. In this module, It will analyze the temperature changes in the thermal image provided by the IR sensor. A sudden change in the pixel values can be considered as a motion.
 
